@@ -26,7 +26,7 @@ It could clock in at 9:00 a.m everyday.
       >
       >  - Once **id & token** are invalid, you have to update the script manually once a week.
       >
-      >  - If your mobile device is on iOS, I'm willing to recommend the `Stream` App which is free & concise. For android, you can install Packet Capture from the Google Play Store :)
+      >  - If your mobile device is on iOS, I'm willing to recommend the `Stream` App which is free & concise. For android users, you can install Packet Capture from the Google Play Store :)
 
 3. [option] Email Settings
     > You can escape this step in branch [no-email](https://github.com/galaxyxxxxx/auto-clock-in/tree/no-email)
