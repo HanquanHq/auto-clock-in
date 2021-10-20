@@ -56,7 +56,7 @@ python3 app.py
   {
       "id": "402880c97b5d8ad1017c39dcd10*****",
       "token": "CA6CD39AFDAC284ED68BB81BD54*****",
-      "c1": "在籍本科生",
+      "c1": "在籍研究生",
       "c2": "在校内居住",
       "c3": "否",
       "c4": "否",
@@ -71,7 +71,7 @@ python3 app.py
       "c14": "未接种",
       "location_longitude": "40",
       "location_latitude": "110",
-      "location_address": "北京市朝阳区平乐园100号北京工业大学"
+      "location_address": "这里填写你的地址"
   }
   ```
 
