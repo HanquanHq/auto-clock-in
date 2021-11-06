@@ -26,7 +26,7 @@ It could clock in at 9:00 a.m everyday.
       >
       >  - Once **id & token** are invalid, you have to update the script manually once a week.
       >
-      >  - If your mobile device is on iOS, I'm willing to recommend the `Stream` App which is free & concise :)
+      >  - If your mobile device is on iOS, I'm willing to recommend the `Stream` App which is free & concise. For android users, you can install Packet Capture from the Google Play Store :)
 
 3. [option] Email Settings
     > You can escape this step in branch [no-email](https://github.com/galaxyxxxxx/auto-clock-in/tree/no-email)
@@ -56,7 +56,7 @@ python3 app.py
   {
       "id": "402880c97b5d8ad1017c39dcd10*****",
       "token": "CA6CD39AFDAC284ED68BB81BD54*****",
-      "c1": "在籍本科生",
+      "c1": "在籍研究生",
       "c2": "在校内居住",
       "c3": "否",
       "c4": "否",
@@ -71,7 +71,7 @@ python3 app.py
       "c14": "未接种",
       "location_longitude": "40",
       "location_latitude": "110",
-      "location_address": "北京市朝阳区平乐园100号北京工业大学"
+      "location_address": "这里填写你的地址"
   }
   ```
 
