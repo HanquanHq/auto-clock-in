@@ -11,10 +11,10 @@ import smtplib
 from os import environ
 from email.mime.text import MIMEText
 
-EMAIL_USERNAME = environ['EMAIL_USERNAME']
-EMAIL_PASSWORD = environ['EMAIL_PASSWORD']
-EMAIL_SERVER = environ['EMAIL_SERVER']
-EMAIL_PORT = int(environ['EMAIL_PORT'])
+# EMAIL_USERNAME = environ['EMAIL_USERNAME']
+# EMAIL_PASSWORD = environ['EMAIL_PASSWORD']
+# EMAIL_SERVER = environ['EMAIL_SERVER']
+# EMAIL_PORT = int(environ['EMAIL_PORT'])
 
 URL_SESSION = 'http://bjut.sanyth.com:81/nonlogin/qywx/authentication.htm?appId=402880c97b1aa5f7017b1ad2bd97001b&urlb64=L3dlaXhpbi9zYW55dGgvaG9tZS5odG1s'
 URL_CLOCKIN = 'http://bjut.sanyth.com:81/syt/zzapply/operation.htm'
@@ -61,19 +61,10 @@ info = {
     'xmqkb': {
         'id': '402880c97b1c114b017b1c2af13d02d8'
     },
-    'c1': core['c1'],
-    'c2': core['c2'],
-    'c3': core['c3'],
-    'c4': core['c4'],
-    'c5': core['c5'],
-    'c6': core['c6'],
-    'c7': core['c7'],
-    'c8': core['c8'],
-    'c12': core['c12'],
-    'c9': core['c9'],
-    'c10': core['c10'],
-    'c11': core['c11'],
-    'c14': core['c14'],
+    'c15': core['c15'],
+    'c16': core['c16'],
+    'c17': core['c17'],
+    'c18': core['c18'],
     'type': 'YQSJSB',
     'location_longitude': core['location_longitude'],
     'location_latitude': core['location_latitude'],
@@ -90,6 +81,7 @@ DATA = prefix_raw + suffix_raw
 # Part3 Clock in
 response_clockin = requests.post(url=URL_CLOCKIN, headers=HEADER, data=DATA)
 
+print(response_clockin.text)
 result = '打卡失败'
 
 if response_clockin.text == 'success':
@@ -106,12 +98,13 @@ HTTP status: {response_clockin.status_code}
 }
 '''
 
-message = MIMEText(result, 'plain', 'utf-8')
-message['Subject'] = 'YQT打卡结果'
-message['FROM'] = EMAIL_USERNAME
-message['To'] = EMAIL_USERNAME
 
-server = smtplib.SMTP(EMAIL_SERVER)
-server.connect(EMAIL_SERVER, EMAIL_PORT)
-server.login(EMAIL_USERNAME, EMAIL_PASSWORD)
-server.sendmail(EMAIL_USERNAME, [EMAIL_USERNAME], message.as_string())
+# message = MIMEText(result, 'plain', 'utf-8')
+# message['Subject'] = 'YQT打卡结果'
+# message['FROM'] = EMAIL_USERNAME
+# message['To'] = EMAIL_USERNAME
+
+# server = smtplib.SMTP(EMAIL_SERVER)
+# server.connect(EMAIL_SERVER, EMAIL_PORT)
+# server.login(EMAIL_USERNAME, EMAIL_PASSWORD)
+# server.sendmail(EMAIL_USERNAME, [EMAIL_USERNAME], message.as_string())
