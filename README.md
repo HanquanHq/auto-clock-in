@@ -6,9 +6,10 @@
 
 1月元旦期间，我参考别人的[脚本](https://github.com/tsosunchia/bjut_autosignin)，更新了一下 app.py，现在是可用的。
 
-使用方式是，抓包拿到你的 id 和 token，放进 app.py 的 userAccounts 里面，直接 `python app.py` 运行即可。
+使用方式是，**抓包拿到你的 id 和 token，放进 app.py 的 userAccounts 里面，然后 `python app.py` 运行即可**。
 
-下面的旧版文档已经过时了，没有必要再看。
+下面的旧版文档已经过时了，就不用看啦。
+
 ## Introduction
 
 A auto clock-in script based on python3 for BJUTer.
