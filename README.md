@@ -1,3 +1,14 @@
+## 2022.01.02 Updates
+
+11月整月，打卡脚本运行的很流畅。
+
+12月初，疫情通大升级，连域名给换了，旧版不能用了，于是回到每日被催打卡的日子。
+
+1月元旦期间，我参考别人的[脚本](https://github.com/tsosunchia/bjut_autosignin)，更新了一下，现在是可用的。
+
+使用方式是，抓包拿到你的 id 和 token，放进 app.py 的 userAccounts 里面，直接 `python app.py` 运行即可。
+
+下面的旧版文档已经过时了，没有必要再看。
 ## Introduction
 
 A auto clock-in script based on python3 for BJUTer.
